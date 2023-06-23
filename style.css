@@ -658,10 +658,11 @@ body {
     transform: rotateY(180deg);
   }
 
-  #Aero-Text {
+  #IIT-text {
     display: inline-block; 
     position: absolute; 
     left:18%; 
+    top: 35%;;
     font-size: 4vw;
     background: linear-gradient(
             to right, red, #f15c5c, rgb(245, 108, 227), #556cf0, #062af7);
@@ -679,13 +680,39 @@ body {
     }
   }
   #typed-wrapper {
+    display: inline-block; 
+    position: absolute; 
+    left:18%; 
+    
+    font-size: 4vw;
     color: red;
-    font-weight: normal;
+  }
+  @keyframes typing {
+    0%, 96% { content: ""; }
+    2%, 94% { content: "A"; }
+    4%, 92% { content: "Ae"; }
+    6%, 90% { content: "Aer"; }
+    8%, 88% { content: "Aero"; }
+    10%, 86% { content: "Aerom"; }
+    12%, 84% { content: "Aeromo"; }
+    14%, 82% { content: "Aeromod"; }
+    16%, 80% { content: "Aeromode"; }
+    18%, 78% { content: "Aeromodel"; }
+    20%, 76% { content: "Aeromodell"; }
+    22%, 74% { content: "Aeromodelli"; }  
+    24%, 72% { content: "Aeromodellin"; }  
+    26%, 70% { content: "Aeromodelling"; }
+    28%, 68% { content: "Aeromodelling "; }
+    30%, 66% { content: "Aeromodelling C"; }
+    32%, 64% { content: "Aeromodelling Cl"; }
+    34%, 62% { content: "Aeromodelling Clu"; }
+    36%, 60% { content: "Aeromodelling Club"; }  
   }
   
-  #typed {
-    font-weight: bold;
-    color: #00bdff;
+  
+  #typed::before {
+    content: "";
+    animation: typing 7s infinite;
   }
   
   .cursor {
