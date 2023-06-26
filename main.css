@@ -767,7 +767,7 @@ body {
 }
 @keyframes nav-text-color {
   from {color:white;}
-  to {color: orange;}
+  to {color: orange; transform: translateY(-10px);}
 }
 
 .main_body {  
