@@ -6,7 +6,7 @@
     <!--for making the website more responsive-->
   	<meta http-equiv="X-UA-compatible" content="ie=">
   	<!--for CSS-->
-  	<link rel="stylesheet" type="text/css" href="main.css">
+  	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
     <title>Document</title>
 </head>
@@ -126,8 +126,22 @@
         <div class="about_us nav-block">
           <h2 class="nav-bar-text">About Us</h2>          
         </div>
+        
       </nav>
+      <!--Mobile Menu-->
+    <ul class="drop_down_menu" id="Menu_block">
+      <li class="item-1">Home</li>
+      <li class="item-2">Projects</li>
+      <li class="item-3">Gallery</li>
+      <li class="item-4">About Us</li>
+    </ul>
+      <div onclick="menuClick()" class="menu" id="navbarMenu">
+        <div id="menu_1"></div>
+        <div id="menu_2"></div>
+        <div id="menu_3"></div>
+      </div>
     </div>
+    
     <div class="main_body">
         <div class="home_introdivs">
           <p class="home_div_head">About Our Club</p>
