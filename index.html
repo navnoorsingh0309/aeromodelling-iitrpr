@@ -3,165 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--for making the website more responsive-->
-  	<meta http-equiv="X-UA-compatible" content="ie=">
-  	<!--for CSS-->
-  	<link rel="stylesheet" type="text/css" href="main.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="About Us/About_Us.css" type="text/css" rel="stylesheet">
+    <link href="Header/Header.css" type="text/css" rel="stylesheet">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <link href="Footer/Footer.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>`
+    <script src="About Us/About_Us.js"></script>
+    <script>
+        $(function() {
+          $('#Header_div').load("Header.html");
+        });
+        $(function() {
+            $('#Background_div').load("Background.html");
+        });
+        $(function() {
+            $('#Plane_div').load("Background_Plane.html");
+        });
+        $(function() {
+            $('#Footer_div').load("Footer.html");
+        });
+      </script>
+    <title>Aeromodelling Club|Meet Our Team</title>
 </head>
 <body>
-    <div class="background">
-        <div class="stars"></div>
-        <div class="twinkleMask"></div>
-        <div class="twinkleMask2"></div>
-        <div class="clouds"></div>    
-        <div class="fogContainer">
-            <div class="fog"></div>
-        </div> 
-    </div>
-    <div class="scrolling-frame">
-      <div class="airplane-wrap">
-        <div class="airplane" id="airplane">
-          <div class="front-cover grp" id="front-cover-grp">
-            <div class="plate front-cover-inner"></div>
-            <div class="plate front-cover-center"></div>
-            <div class="trapezoid front-cover-top"></div>
-            <div class="trapezoid front-cover-bottom"></div>
-            <div class="trapezoid front-cover-left"></div>
-            <div class="trapezoid front-cover-right"></div>
-            <div class="bordered-thin front-cover-top-left"></div>
-            <div class="bordered-thin front-cover-top-right"></div>
-            <div class="bordered-thin front-cover-bottom-left"></div>
-            <div class="bordered-thin front-cover-bottom-right"></div>
-          </div>
-          <div class="body grp" id="body-grp">
-            <div class="plate left-cover"></div>
-            <div class="plate right-cover"></div>
-            <div class="plate top-cover-front"></div>
-            <div class="plate top-cover-back"></div>
-            <div class="cockpit grp" id="cockpit-grp">
-              <div class="plate roof"></div>
-              <div class="bordered window-fill front-window"></div>
-              <div class="window left-window"></div>
-              <div class="window right-window"></div>
-              <div class="bordered window-fill rear-window"></div>
+    <div id="Header_div"></div>
+    <div id="Background_div"></div>
+    <div id="Plane_div"></div>
+    <div class="Main_Body_About_Us">
+        <H1 class="Message_Head">Meet Our Team</H1>
+        <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 0)" onmouseout="BubblyOut(0)">
+            <img src="Team/Sai Bhaiya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">S S Susanth Reddy</h5>
+                <p class="card-text">Club Secretory</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="plate bottom-cover"></div>
-            <div class="plate back-cover"></div>
-          </div>
-          <div class="top-tail grp" id="top-tail-grp">
-            <div class="plate tail-top"></div>
-            <div class="plate tail-front"></div>
-            <div class="plate tail-back"></div>
-            <div class="plate-no-border tail-left-rect"></div>
-            <div class="triangle tail-triangle-left-bottom"></div>
-            <div class="triangle tail-triangle-left-top"></div>
-            <div class="plate-no-border tail-right-rect"></div>
-            <div class="triangle tail-triangle-right-bottom"></div>
-            <div class="triangle tail-triangle-right-top"></div>
-            <div class="bordered tail-connector"></div>
-          </div>
-          <div class="right-tail grp" id="right-tail-grp">
-            <div class="plate tail-top"></div>
-            <div class="plate tail-front"></div>
-            <div class="plate tail-back"></div>
-            <div class="plate-no-border tail-left-rect"></div>
-            <div class="triangle tail-triangle-left-bottom"></div>
-            <div class="triangle tail-triangle-left-top"></div>
-            <div class="plate-no-border tail-right-rect"></div>
-            <div class="triangle tail-triangle-right-bottom"></div>
-            <div class="triangle tail-triangle-right-top"></div>
-            <div class="bordered tail-connector"></div>
-          </div>
-          <div class="left-tail grp" id="left-tail-grp">
-            <div class="plate tail-top"></div>
-            <div class="plate tail-front"></div>
-            <div class="plate tail-back"></div>
-            <div class="plate-no-border tail-left-rect"></div>
-            <div class="triangle tail-triangle-left-bottom"></div>
-            <div class="triangle tail-triangle-left-top"></div>
-            <div class="plate-no-border tail-right-rect"></div>
-            <div class="triangle tail-triangle-right-bottom"></div>
-            <div class="triangle tail-triangle-right-top"></div>
-            <div class="bordered tail-connector"></div>
-          </div>
-          <div class="wing grp" id="wing-grp">
-            <div class="plate wing-right"></div>
-            <div class="plate wing-right bottom"></div>
-            <div class="plate wing-left"></div>
-            <div class="plate wing-left bottom"></div>
-            <div class="bordered conector right"></div>
-            <div class="bordered conector left"></div>
-          </div>
-          <div class="propeller rotate-propeller grp" id="propeller-grp">
-            <div class="plate propeller-center"></div>
-            <div class="plate propeller-center top"></div>
-            <div class="plate p-w propeller-wing-1"></div>
-            <div class="plate p-w propeller-wing-2"></div>
-            <div class="plate p-w propeller-wing-3"></div>
-            <div class="plate p-w propeller-wing-4"></div>
-            <div class="plate p-w propeller-wing-5"></div>
-            <div class="plate p-w propeller-wing-6"></div>
-            <div class="plate p-w propeller-wing-7"></div>
-            <div class="plate p-w propeller-wing-8"></div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="Header">
-      <img src="logo.jpg" id="Logo">
-      <h1 id="typed-wrapper"><span id="typed"></span><span class="cursor">&nbsp;</span></h1>
-      <h1 id="IIT-text">IIT Ropar</h1>
-      <nav class="navbar">
-        <div class="home nav-block">          
-            <h2 class="nav-bar-text">Home</h2>        
+       <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 1)" onmouseout="BubblyOut(1)">
+            <img src="Team/Advait Bhaiya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Advait Chandorkar</h5>
+                <p class="card-text">Super Coordinator</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-        <div class="projects nav-block">
-          <h2 class="nav-bar-text">Projects</h2>
+        <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 2)" onmouseout="BubblyOut(2)">
+            <img src="Team/Akash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Akash Jangid</h5>
+              <p class="card-text">Representative</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 3)" onmouseout="BubblyOut(3)">
+            <img src="Team/Me.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Navnoor Singh Bal</h5>
+                <p class="card-text">Coordinator</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-        <div class="gallery nav-block">
-          <h2 class="nav-bar-text">Gallery</h2>
-        </div>
-        <div class="about_us nav-block">
-          <h2 class="nav-bar-text">About Us</h2>          
-        </div>
-        
-      </nav>
-      <!--Mobile Menu-->
-    <ul class="drop_down_menu" id="Menu_block">
-      <li class="item-1">Home</li>
-      <li class="item-2">Projects</li>
-      <li class="item-3">Gallery</li>
-      <li class="item-4">About Us</li>
-    </ul>
-      <div onclick="menuClick()" class="menu" id="navbarMenu">
-        <div id="menu_1"></div>
-        <div id="menu_2"></div>
-        <div id="menu_3"></div>
-      </div>
-    </div>
-    
-    <div class="main_body">
-        <div class="home_introdivs">
-          <p class="home_div_head">About Our Club</p>
-          <p class="home_div_text">
-            The Aeromodelling Club of IIT Ropar is a community of passionate and 
-            diligent students who work towards building aircraft models like 
-            RC planes, rockets, drones, and so on. We use science and 
-            skills to develop and design flying model aircrafts. We provide opportunities 
-            for everyone to learn and contribute. We ensure the flame of passion never dies
-             by continuously participating in national-level competitions to challenge ourselves 
-             and upgrade ourselves at every step. Engineering is all about technical 
-             knowledge and its applications; the aeromodelling club aims to build a 
-             community of engineers passionate about aviation. Learning is all about 
-             inputting hard work and expertise, and this club acts as a platform to impart 
-             knowledge and share ideas by conducting sessions regularly. We strive for 
-             continuous improvement. It is pertinent here to mention that failure is 
-             an integral part of learning; no matter how many times the drone breaks,
-              in the end, it always flies high…
-          </p>
-        </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 4)" onmouseout="BubblyOut(4)">
+            <img src="Team/Aditya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aditya Kumar</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 5)" onmouseout="BubblyOut(5)">
+            <img src="Team/Abhinav Vasu.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Abhinav Vasu</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 6)" onmouseout="BubblyOut(6)">
+            <img src="Team/Dharmansh.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dharmansh Vyas</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 7)" onmouseout="BubblyOut(7)">
+            <img src="Team/Nakul.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nakul</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 8)" onmouseout="BubblyOut(8)">
+            <img src="Team/Nishant.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nishant</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 9)" onmouseout="BubblyOut(9)">
+            <img src="Team/Priyanshi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Priyanshi Vachhani</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 10)" onmouseout="BubblyOut(10)">
+            <img src="Team/Tarini.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tarini Magotra</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 11)" onmouseout="BubblyOut(11)">
+            <img src="Team/Vaishnavi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vaishnavi Gowrishankar</h5>
+              <p class="card-text">Coordinator</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div id="Footer_div"></div>
     </div>
 </body>
 </html>
