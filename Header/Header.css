@@ -221,4 +221,21 @@
       display: block;
     }
   }
-  
+  @media only screen and (max-width:700px) {
+      #Logo {
+        margin-left: 10px;
+      }
+      #IIT-text {
+        top: 50%;
+        left: 90px;
+        font-size: 12px;;
+      }
+      #typed_wrapper {
+        top: 25%;
+        left:90px;
+        font-size: 12px;
+      }
+      .menu {
+        right: 10px;
+      }
+  }
