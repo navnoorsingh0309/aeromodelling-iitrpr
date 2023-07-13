@@ -3,133 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg">
+    <!--for making the website more responsive-->
+  	<meta http-equiv="X-UA-compatible" content="ie=">
+  	<!--for CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="About Us/About_Us.css" type="text/css" rel="stylesheet">
-    <link href="Header/Header.css" type="text/css" rel="stylesheet">
-    <link href="main.css" type="text/css" rel="stylesheet">
-    <link href="Footer/Footer.css" type="text/css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="Header/Header.css">
+    <link rel="stylesheet" type="text/css" href="Footer/Footer.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>`
-    <script src="About Us/About_Us.js"></script>
+    <script src="jquery.js"></script>
+    <script src="Header/Header.js"></script>
+    <script src="script.js"></script>
     <script>
-        $(function() {
-          $('#Header_div').load("Header/Header.html");
-        });
-        $(function() {
-            $('#Background_div').load("Background/Background.html");
-        });
-        $(function() {
-            $('#Plane_div').load("Background/Background_Plane.html");
-        });
-        $(function() {
+      $(function() {
+        $('#Header_div').load("Header/Header.html");
+      });
+      $(function() {
+        $('#Background_div').load("Background/Background.html");
+      });
+      $(function() {
+        $('#Plane_div').load("Background/Background_Plane.html");
+      });
+      $(function() {
             $('#Footer_div').load("Footer/Footer.html");
         });
-      </script>
-    <title>Aeromodelling Club|Meet Our Team</title>
+    </script>
+    <title>Aeromodelling Club|IIT Ropar</title>
 </head>
 <body>
     <div id="Header_div"></div>
     <div id="Background_div"></div>
     <div id="Plane_div"></div>
-    <div class="Main_Body_About_Us">
-        <H1 class="Message_Head">Meet Our Team</H1>
-        <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 0)" onmouseout="BubblyOut(0)">
-            <img src="Team/Sai Bhaiya.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">S S Susanth Reddy</h5>
-                <p class="card-text">Club Secretory</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <div class="Main_Body">
+      <!--SlideShow-->
+      <div class="Slideshow">
+        <div class="Slideshow_Slides fade_Slides">
+          <img src="Advitya/1.jpg" style="width: 100%;" class="Slide_Images">
+          <div class="Slide_Caption">Caption 1</div>
         </div>
-       <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 1)" onmouseout="BubblyOut(1)">
-            <img src="Team/Advait Bhaiya.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Advait Chandorkar</h5>
-                <p class="card-text">Super Coordinator</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="Slideshow_Slides fade_Slides">
+          <img src="Advitya/2.jpg" style="width: 100%;" class="Slide_Images">
+          <div class="Slide_Caption">Caption 2</div>
         </div>
-        <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 2)" onmouseout="BubblyOut(2)">
-            <img src="Team/Akash.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Akash Jangid</h5>
-              <p class="card-text">Representative</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 3)" onmouseout="BubblyOut(3)">
-            <img src="Team/Me.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Navnoor Singh Bal</h5>
-                <p class="card-text">Coordinator</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="Slideshow_Slides fade_Slides">
+          <img src="Advitya/3.jpg" style="width: 100%;" class="Slide_Images">
+          <div class="Slide_Caption">Caption 3</div>
         </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 4)" onmouseout="BubblyOut(4)">
-            <img src="Team/Aditya.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Aditya Kumar</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="Slideshow_Slides fade_Slides">
+          <img src="Advitya/4.jpg" style="width: 100%;" class="Slide_Images">
+          <div class="Slide_Caption">Caption 4</div>
+        </div>
+        <a class="prev_Slide" onclick="Slides(-1)">❮</a>
+        <a class="next_Slide" onclick="Slides(1)">❯</a>
+      </div>
+        <div class="Messages_Section">
+          <div class="Message_Text_Section">
+            <H1 class="Message_Head">About Our Club</H1>
+            <p class="Message_Text">The Aeromodelling Club of IIT Ropar is a community of passionate and 
+              diligent students who work towards building aircraft models like 
+              RC planes, rockets, drones, and so on. We use science and 
+              skills to develop and design flying model aircrafts. We provide opportunities 
+              for everyone to learn and contribute. We ensure the flame of passion never dies
+               by continuously participating in national-level competitions to challenge ourselves 
+               and upgrade ourselves at every step. Engineering is all about technical 
+               knowledge and its applications; the aeromodelling club aims to build a 
+               community of engineers passionate about aviation. Learning is all about 
+               inputting hard work and expertise, and this club acts as a platform to impart 
+               knowledge and share ideas by conducting sessions regularly. We strive for 
+               continuous improvement. It is pertinent here to mention that failure is 
+               an integral part of learning; no matter how many times the drone breaks,
+                in the end, it always flies high…</p>
+          </div>
+        </div>
+        <div class="Messages_Section" id="Advitya_Section">
+          <div class="Message_Text_Section" id="Advitya_Text_Section">
+            <H1 class="Message_Head">Advitya</H1>
+            <p class="Message_Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptates, aut distinctio quos explicabo in error illo numquam! Quod eligendi, ex natus iure odit expedita ab delectus nisi numquam repudiandae, laudantium sint ut corrupti fugiat, minima commodi magni repellendus. Itaque sapiente enim, quisquam doloribus tempore ut ullam officiis deserunt nihil laborum consequatur sequi, minima quaerat et recusandae ratione inventore obcaecati nobis dolor expedita aut id optio? Nostrum ipsam temporibus incidunt, aliquid sunt nemo est cupiditate harum quis omnis dignissimos, sed sint accusamus vitae corrupti labore numquam ut cumque praesentium dolorum neque. Eos nobis, numquam eius modi asperiores id laborum. Cum.</p>
+          </div>
+          <div class="Message_Images" id="Advitya_Images">
+            <div id="Img_Col_1">
+              <img src="Advitya/1.jpg" id="Msg_Img_1">
+              <img src="Advitya/2.jpg" id="Msg_Img_2">
+            </div>
+            <div id="Img_Col_2">
+              <img src="Advitya/3.jpg" id="Msg_Img_3">
+              <img src="Advitya/4.jpg" id="Msg_Img_4">
             </div>
           </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 5)" onmouseout="BubblyOut(5)">
-            <img src="Team/Abhinav Vasu.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Abhinav Vasu</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 6)" onmouseout="BubblyOut(6)">
-            <img src="Team/Dharmansh.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dharmansh Vyas</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 7)" onmouseout="BubblyOut(7)">
-            <img src="Team/Nakul.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nakul</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 8)" onmouseout="BubblyOut(8)">
-            <img src="Team/Nishant.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nishant</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 9)" onmouseout="BubblyOut(9)">
-            <img src="Team/Priyanshi.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Priyanshi Vachhani</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 10)" onmouseout="BubblyOut(10)">
-            <img src="Team/Tarini.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Tarini Magotra</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;" onmousemove="BubblyFunc(event, 11)" onmouseout="BubblyOut(11)">
-            <img src="Team/Vaishnavi.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vaishnavi Gowrishankar</h5>
-              <p class="card-text">Coordinator</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div id="Footer_div"></div>
+        </div>
+        <div id="Footer_div"></div>
     </div>
 </body>
+<script>
+  //Slideshow
+  var slideIndex = 1, timeOut;
+  showSlideNumber(slideIndex);
+  function Slides(n) {
+      showSlideNumber(slideIndex += n);
+  }
+  function showSlideNumber(n) {
+      var slides = document.getElementsByClassName("Slideshow_Slides");
+      if(n>slides.length)
+      {
+        slideIndex = 1;
+      }        
+      else if(n<1)
+      {
+        slideIndex = slides.length;
+      }
+      for(var i=0;i<slides.length;i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+      clearTimeout(timeOut);
+      timeOut = setTimeout(AutomaticChanging, 5000);
+  }
+  function AutomaticChanging() {
+    showSlideNumber(slideIndex += 1);
+  }
+</script>
 </html>
