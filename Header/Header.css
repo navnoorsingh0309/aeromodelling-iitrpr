@@ -170,9 +170,9 @@
     font-size: 25px;;
     font-family: 'Sen';
     color:white;
-    display: none;
     text-align: center;
     cursor: pointer;
+    transform: rotateX(-90deg);
   }
   .drop_down_menu li {
     font-size: 25px;;
@@ -194,6 +194,22 @@
         transform: rotateX(0deg) 
     }
   }
+  @keyframes drop_down_animation_out {
+    100% {
+        transform: rotateX(-90deg)
+    }
+    30% {
+        transform: rotateX(20deg) 
+    }
+    0% {
+        transform: rotateX(0deg) 
+    }
+  }
+  @media screen and (min-width:1000px) {
+    .drop_down_menu {
+      display: none;
+    }
+  }
   @media only screen and (max-width:1000px) {
     .navbar {
       display: none;
@@ -201,5 +217,8 @@
     .menu {
       display: block;
     }
-    
-  }  
+    .drop_down_menu {
+      display: block;
+    }
+  }
+  
