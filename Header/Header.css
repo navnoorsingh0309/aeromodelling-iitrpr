@@ -103,7 +103,7 @@
     display: inline-block;  
     cursor: pointer;
     height: 33px;
-    margin-top: 19px;  
+    margin-top: 0px;  
   }
   .nav-bar-text {
     color: white;
@@ -116,7 +116,7 @@
   }
   @keyframes nav-text-color {
     from {color:white;}
-    to {color: orange;  transform: translateY(-10px);}
+    to {color: orange;  transform: translateY(-5px);}
   }
   
   .main_body {  
