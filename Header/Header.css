@@ -13,12 +13,8 @@
     border-radius: 50%;
     margin-left: 50px;
     height: 90%;
-    box-shadow: inset 0 3px 6px white, 0 4px 6px white;
     transition: transform 1s;
     transform-style: preserve-3d;
-  }
-  #Logo:hover {
-    transform: rotateY(180deg);
   }
   
   #IIT-text {
@@ -107,7 +103,7 @@
     display: inline-block;  
     cursor: pointer;
     height: 33px;
-    margin-top: 20px;  
+    margin-top: 19px;  
   }
   .nav-bar-text {
     color: white;
@@ -164,7 +160,7 @@
   }
   /*Drop-Down Mobile Menu*/
   .drop_down_menu {
-    background-color: #374E59;
+    background-color: #00aeff;
     width:100%;
     top: 70px;
     font-size: 25px;;
@@ -222,20 +218,20 @@
     }
   }
   @media only screen and (max-width:700px) {
-      #Logo {
-        margin-left: 10px;
-      }
-      #IIT-text {
-        top: 50%;
-        left: 90px;
-        font-size: 12px;;
-      }
-      #typed-wrapper {
-        top: 25%;
-        left:90px;
-        font-size: 12px;
-      }
-      .menu {
-        right: 10px;
-      }
-  }
+    #Logo {
+      margin-left: 10px;
+    }
+    #IIT-text {
+      top: 50%;
+      left: 90px;
+      font-size: 12px;;
+    }
+    #typed-wrapper {
+      top: 25%;
+      left:90px;
+      font-size: 12px;
+    }
+    .menu {
+      right: 10px;
+    }
+}
