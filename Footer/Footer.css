@@ -1,18 +1,6 @@
 .footer{
     background: #152F4F;
     color:white;
-    
-    .links{
-      ul {list-style-type: none;}
-      li a{
-        color: white;
-        transition: color .2s;
-        &:hover{
-          text-decoration:none;
-          color:#4180CB;
-          }
-      }
-    }  
     .about-company{
       i{font-size: 25px;}
       a{
@@ -24,7 +12,31 @@
     .location{
       i{font-size: 18px;}
     }
-    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
-    text-align: center;
+    .copyright{
+      width: 100%;
+      border-top:1px solid rgba(255,255,255,.1);} 
   }
-  
+  .Footer_link {
+    text-decoration: none;
+    color:orange;
+    transition: all 0.5s;
+  }
+  .Footer_link:hover {
+    margin-left: 10px;
+    color:darkgoldenrod;
+  }
+  .Name {
+    color:rgb(245, 183, 68);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.Name:hover {
+    color:rgb(201, 131, 2);
+}
+
+#Logo_foot {
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  height: 60px;
+}
