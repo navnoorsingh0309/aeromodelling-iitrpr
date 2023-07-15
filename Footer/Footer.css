@@ -1,6 +1,19 @@
 .footer{
+  text-align: left;
     background: #152F4F;
     color:white;
+    .links {
+      text-align: left;
+    }
+    @media only screen and (max-width:1000px) {
+      .links {
+        margin-left: 50px;
+      }
+      .location {
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+    }
     .about-company{
       i{font-size: 25px;}
       a{
